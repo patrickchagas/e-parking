@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>e-Parking</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<link rel="shortcut icon" href="..\favicon.ico">
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600"
+        rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/pages/dashboard.css" rel="stylesheet">
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
+                    class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </a><a class="brand" href="">e-Parking</a>
+      <div class="nav-collapse">
+				<ul class="nav pull-right">
+					<li class="dropdown">						
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="icon-cog"></i>
+							Conta
+							<b class="caret"></b>
+						</a>
+						
+						<ul class="dropdown-menu">
+							<li><a href="configuracoes.html">Configurações</a></li>
+							<li><a href="faq.html">Ajuda</a></li>
+						</ul>						
+					</li>
+			
+					<li class="dropdown">						
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="icon-user"></i> 
+							e-Parking
+							<b class="caret"></b>
+						</a>
+						
+						<ul class="dropdown-menu">
+							<li><a href="perfil.html">Perfil</a></li>
+							<li><a href="../sair.html">Sair</a></li>
+						</ul>						
+					</li>
+				</ul>
+        <form class="navbar-search pull-right">
+          <input type="text" class="search-query" placeholder="Search">
+        </form>
+      </div>
+      <!--/.nav-collapse --> 
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /navbar-inner --> 
+</div>
+<!-- /navbar -->
+<div class="subnavbar">
+  <div class="subnavbar-inner">
+    <div class="container">
+      <ul class="mainnav">
+		<li><a href="patio.html"><i class="icon-home"></i><span>Pátio</span> </a> </li>
+		<li><a href="veiculos.html"><i class="icon-truck"></i><span>Veículos</span> </a> </li>
+		<li><a href="cliente.html"><i class="icon-user"></i><span>Cliente</span> </a> </li>    
+		<li><a href="agenda.html"><i class="icon-calendar"></i><span>Agenda</span> </a> </li>
+		<li><a href="marketing.html"><i class="icon-envelope"></i><span>Marketing</span> </a> </li>        
+		<li><a href="financas.html"><i class="icon-bar-chart"></i><span>Finanças</span> </a> </li>
+		<li><a href="anotacoes.html"><i class="icon-file"></i><span>Anotações</span> </a> </li>
+		<li><a href="dashboard.html"><i class="icon-dashboard"></i><span>Dashboard</span> </a> </li>       
+		<li class="active"><a href="manutencao.html"><i class="icon-wrench"></i><span>Manutenção</span> </a> </li>	
+      </ul>
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /subnavbar-inner --> 
+</div>
+<!-- /subnavbar -->
+
+    
+
+<div class="main">
+	
+	<div class="main-inner">
+
+	    <div class="container">
+	
+	      <div class="row">
+	      	
+	      	<div class="span12">      		
+	      		
+	      		<div class="widget ">
+	      			
+	      			<div class="widget-header">
+	      				<i class="icon-user"></i>
+	      				<h3>Manutenção do Sistema</h3>
+	  				</div> <!-- /widget-header -->
+					
+					<div class="widget-content">
+					
+					
+					<br>
+						
+				<div class="tab-content">
+						<div class="tab-pane" id="formcontrols">						
+						</div> <!-- /widget-content -->	
+						
+						<form id="edit-profile" class="form-horizontal" action="cliente.html">
+									<fieldset>
+										
+										<div class="control-group">											
+											<label class="control-label">Backup</label>											
+                                            
+											<div class="controls">
+
+												<label class="checkbox inline">
+												  <input type="checkbox">Diário (00:00)
+												</label>
+												<br />
+												
+												<label class="checkbox inline">
+												  <input type="checkbox">Semanal (Sexta-Feira 23:00)
+												</label>
+												<br />
+												
+												<label class="checkbox inline">
+												  <input type="checkbox">A cada 12 horas (00:00 e 12:00)
+												</label>
+												<br /><br />
+												Despejo em XML <input type="button" value="Download">
+											</div>		<!-- /controls -->
+										</div> <!-- /control-group -->
+										
+
+										<div class="control-group">											
+											<label class="control-label">Salvar Backup no diretório</label>											
+                                            
+											<div class="controls">
+												<label class="text inline">
+												  <input type="text" value="C:\eParking\Backup\">
+												</label>
+											</div>		<!-- /controls -->
+										</div> <!-- /control-group -->
+										
+										<div class="control-group">											
+											<label class="control-label">Filto por página</label>
+                                            <div class="controls">
+												<label class="select inline">
+													<select name="select">
+														<option value="valor1" selected>20</option> 
+														<option value="valor2">50</option>
+														<option value="valor3">100</option>
+													</select>
+												</label>
+												<br />
+											</div>		<!-- /controls -->
+										</div> <!-- /control-group -->
+										
+										<div class="control-group">											
+											<label class="control-label">Formato dos números</label>
+                                            <div class="controls">
+												<label class="select inline">
+													<select name="select">
+														<option value="valor1">1 234.56</option> 
+														<option value="valor2">1,234.56</option>
+														<option value="valor3">1 234,56</option>
+														<option value="valor4">1234.56</option>
+														<option value="valor5" selected>1234,56</option>
+													</select>
+												</label>
+												<br />
+											</div>		<!-- /controls -->
+										</div> <!-- /control-group -->
+										
+										
+										<div class="control-group">											
+											<label class="control-label">Delimitador CSV</label>
+                                            <div class="controls">
+												<label class="select inline">
+													<select name="select">
+														<option value="valor1">;</option> 
+														<option value="valor2">,</option>
+													</select>
+												</label>
+												<br />
+											</div>		<!-- /controls -->
+										</div> <!-- /control-group -->
+										
+										
+										<div class="control-group">											
+											<label class="control-label">Notificar alterações</label>
+                                            <div class="controls">
+												<label class="select inline">
+													<select name="select">
+														<option value="valor1">Por e-mail</option> 
+														<option value="valor2">Por POP-UP</option>
+													</select>
+												</label>
+												<br />
+											</div>		<!-- /controls -->
+										</div> <!-- /control-group -->
+
+									<div class="control-group">											
+											<label class="control-label">Exportação e Pátio</label>                                            
+											<div class="controls">
+												<label class="checkbox inline">
+												  <input type="checkbox">Atualizar layout de pátio automaticamente
+												</label>
+												<br />
+												
+												<label class="checkbox inline">
+												  <input type="checkbox">Exibir exportação PDF
+												</label>
+											</div>		<!-- /controls -->
+										</div> <!-- /control-group -->
+
+
+										<div class="control-group">
+											<label class="control-label"></label>
+												<div class="controls">
+													 <!-- Button to trigger modal -->
+                                                    <a href="#myModal" role="button" class="btn" data-toggle="modal">Salvar</a>
+                                                     
+                                                    <!-- Modal -->
+                                                    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                      <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                        <h3 id="myModalLabel">Deseja realmente salvar as alterações?</h3>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        <p>Clique para salvar</p>
+                                                      </div>
+                                                      <div class="modal-footer">
+                                                        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancelar</button>
+                                                        <button class="btn btn-primary">Salvar mudanças</button>
+                                                      </div>
+                                                    </div>
+												</div> <!-- /controls -->	
+										</div> <!-- /control-group -->
+							</div>			
+								</fieldset>
+									
+								</form>						
+					</div> <!-- /widget -->
+	      		</div>
+		    </div> <!-- /span8 -->
+	      	
+	      	
+	      	
+	      	
+	      </div> <!-- /row -->
+	
+	    </div> <!-- /container -->
+	    
+	</div> <!-- /main-inner -->
+    
+</div> <!-- /main -->
+    
+    
+    
+ 
+<div class="extra">
+
+	<div class="extra-inner">
+
+		<div class="container">
+
+			<div class="row">
+                    <div class="span3">
+                        <h4>
+                            Sobre</h4>
+                        <ul>
+                            <li><a href="javascript:;">Informações de desenvolvedores</a></li>
+							<li><a href="javascript:;">Sobre e-Parking</a></li>
+                        </ul>
+                    </div>
+                    <!-- /span3 -->
+                    <div class="span3">
+                        <h4>
+                            Suporte</h4>
+                        <ul>
+                            <li><a href="faq.html">Ajuda</a></li>
+                            <li><a href="javascript:;">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <!-- /span3 -->
+                    <div class="span3">
+                        <h4>
+                            Informações legais</h4>
+                        <ul>                          
+                            <li><a href="javascript:;">Termo de Utilização</a></li>
+                            <li><a href="javascript:;">Política de Privacidade</a></li>
+                        </ul>
+                    </div>
+                    <!-- /span3 -->
+                    <div class="span3">
+                        <h4>
+                            Informações adicionais</h4>
+                        <ul>
+                            <li><a href="">Acesso a Filiais</a></li>
+                            <li><a href="">Ética Corporativa</a></li>
+                        </ul>
+                    </div>
+                </div> <!-- /row -->
+
+		</div> <!-- /container -->
+
+	</div> <!-- /extra-inner -->
+
+</div> <!-- /extra -->
+
+
+    
+    
+<div class="footer">
+	
+	<div class="footer-inner">
+		
+		<div class="container">
+			
+			<div class="row">
+				
+    			<div class="span12">
+    				&copy; 2016 <a href="">e-Parking</a>.
+    			</div> <!-- /span12 -->
+    			
+    		</div> <!-- /row -->
+    		
+		</div> <!-- /container -->
+		
+	</div> <!-- /footer-inner -->
+	
+</div> <!-- /footer -->
+    
+
+
+<script src="js/jquery-1.7.2.min.js"></script>
+	
+<script src="js/bootstrap.js"></script>
+<script src="js/base.js"></script>
+
+
+  </body>
+
+</html>

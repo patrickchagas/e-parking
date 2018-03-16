@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>e-Parking</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600"
+        rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/pages/dashboard.css" rel="stylesheet">
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+	<link rel="shortcut icon" href="../favicon.ico">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
+                    class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </a><a class="brand" href="index.html">e-Parking </a>
+      <div class="nav-collapse">
+       				<ul class="nav pull-right">
+					<li class="dropdown">						
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="icon-cog"></i>
+							Conta
+							<b class="caret"></b>
+						</a>
+						
+						<ul class="dropdown-menu">
+							<li><a href="configuracoes.html">Configurações</a></li>
+							<li><a href="faq.html">Ajuda</a></li>
+						</ul>						
+					</li>
+			
+					<li class="dropdown">						
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="icon-user"></i> 
+							e-Parking
+							<b class="caret"></b>
+						</a>
+						
+						<ul class="dropdown-menu">
+							<li><a href="perfil.html">Perfil</a></li>
+							<li><a href="sair.html">Sair</a></li>
+						</ul>						
+					</li>
+				</ul>
+        <form class="navbar-search pull-right">
+          <input type="text" class="search-query" placeholder="Buscar">
+        </form>
+      </div>
+      <!--/.nav-collapse --> 
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /navbar-inner --> 
+</div>
+<!-- /navbar -->
+<div class="subnavbar">
+  <div class="subnavbar-inner">
+    <div class="container">
+      <ul class="mainnav">
+        <li><a href="patio.html"><i class="icon-home"></i><span>Pátio</span> </a> </li>
+        <li><a href="veiculos.html"><i class="icon-truck"></i><span>Veículos</span> </a> </li>
+        <li><a href="cliente.html"><i class="icon-user"></i><span>Cliente</span> </a> </li>    
+        <li><a href="agenda.html"><i class="icon-calendar"></i><span>Agenda</span> </a> </li>
+        <li class="active"><a href="marketing.html"><i class="icon-envelope"></i><span>Marketing</span> </a> </li>        
+        <li><a href="financas.html"><i class="icon-bar-chart"></i><span>Finanças</span> </a> </li>
+        <li><a href="anotacoes.html"><i class="icon-file"></i><span>Anotações</span> </a> </li>
+        <li><a href="dashboard.html"><i class="icon-dashboard"></i><span>Dashboard</span> </a> </li>       
+        <li><a href="manutencao.html"><i class="icon-wrench"></i><span>Manutenção</span> </a> </li>
+      </ul>
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /subnavbar-inner --> 
+</div>
+<!-- /subnavbar -->
+<div class="main">
+  <div class="main-inner">
+    <div class="container">
+      <div class="row">
+        <div class="span6">
+          <div class="widget widget-nopad">
+            <div class="widget-header"> <i class="icon-list-alt"></i>
+              <h3> Status do dia</h3>
+            </div>
+            <!-- /widget-header -->
+            <div class="widget-content">
+              <div class="widget big-stats-container">
+                <div class="widget-content">
+                  <h6 class="bigstats">Número de pessoas alcançadas pela campanha (#25) nas redes sociais</h6>
+                  <div id="big_stats" class="cf">
+                    <div class="stat"> <i class="icon-facebook-sign"></i> <span class="value">851</span> </div>
+                    <!-- .stat -->
+                    
+                    <div class="stat"> <i class="icon-linkedin-sign"></i> <span class="value">114</span> </div>
+                    <!-- .stat -->
+                    
+                    <div class="stat"> <i class="icon-twitter-sign"></i> <span class="value">68</span> </div>
+                    <!-- .stat -->
+                    
+                    <div class="stat"> <i class="icon-google-plus-sign"></i> <span class="value">25</span> </div>
+                    <!-- .stat --> 
+                  </div>
+                </div>
+                <!-- /widget-content --> 
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="widget">
+            <div class="widget-header"> <i class="icon-file"></i>
+              <h3> Comentários</h3>
+            </div>
+            <!-- /widget-header -->
+            <div class="widget-content">
+              <ul class="messages_layout">
+                <li class="from_user left"> <a href="cliente-1-joao-pereira-da-silva.html" class="avatar"><img src="img/joao-silva.jpg"/></a>
+                  <div class="message_wrap"> <span class="arrow"></span>
+                    <div class="info"> <a class="name" href="cliente-1-joao-pereira-da-silva.html">João Pereira da Silva</a> <span class="time">1 hora atrás (Compartilhado no Facebook)</span>
+                      <div class="options_arrow">
+                        <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
+                          <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">                            
+                            <li><a href="#"><i class=" icon-trash icon-large"></i> Excluir</a></li>
+                            <li><a href="#"><i class=" icon-share icon-large"></i> Compartilhar</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text">Atendimento impecável! Nota 10!</div>
+                  </div>
+                </li>
+
+                <li class="from_user left"> <a href="cliente-2-joaquim-sampaio-correa.html" class="avatar"><img src="img/joaquim-correa.jpg"/></a>
+                  <div class="message_wrap"> <span class="arrow"></span>
+                    <div class="info"> <a class="name" href="">Joaquim Sampaio Corrêa </a> <span class="time">2 horas atrás (Compartilhado no LinkedIn)</span>
+                      <div class="options_arrow">
+                        <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
+                          <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">                            
+                            <li><a href="#"><i class=" icon-trash icon-large"></i> Excluir</a></li>
+                            <li><a href="#"><i class=" icon-share icon-large"></i> Compartilhar</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text">Estou muito satisfeito com os serviços oferecidos por e-Parking. O suporte é sensacional, e a personalização é incrível!
+					Podemos marcar uma reunião com finalidade de investimentos? Abraços!
+					</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- /widget-content --> 
+          </div>
+          <!-- /widget --> 
+        </div>
+        <!-- /span6 -->
+        <div class="span6">
+          <div class="widget">
+            <div class="widget-header"> <i class="icon-bookmark"></i>
+              <h3>Ajustes</h3>
+            </div>
+            <!-- /widget-header -->
+            <div class="widget-content">
+				<div class="shortcuts"> 
+				<a href="javascript:;" class="shortcut">
+				<i class="shortcut-icon icon-list-alt"></i>
+				<span class="shortcut-label">Campanhas</span> </a><a href="javascript:;" class="shortcut">
+				
+				<i class="shortcut-icon icon-bookmark"></i>
+				<span class="shortcut-label">Favoritos</span> </a><a href="javascript:;" class="shortcut">
+				
+				<i class="shortcut-icon icon-signal"></i> 
+				<span class="shortcut-label">Relatórios</span>
+ 				
+				</a><a href="javascript:;" class="shortcut"> <i class="shortcut-icon icon-comment"></i>			
+				<span class="shortcut-label">Comentários</span> </a><a href="javascript:;" class="shortcut">
+				
+				<i class="shortcut-icon icon-pushpin"></i>
+				<span class="shortcut-label">Campanhas Fixas</span> </a><a href="javascript:;" class="shortcut">
+				
+				<i class="shortcut-icon icon-file"></i><span class="shortcut-label">Novo</span> 
+				</a><a href="javascript:;" class="shortcut">
+				
+				<i class="shortcut-icon icon-picture"></i>				
+				<span class="shortcut-label">Fotos</span> </a><a href="javascript:;" class="shortcut"> 
+				
+				<i class="shortcut-icon icon-tag"></i>				
+				<span class="shortcut-label">Tags</span> </a> </div>
+  <!-- /shortcuts --> 
+            </div>
+            <!-- /widget-content --> 
+          </div>
+          
+          <div class="widget widget-nopad">
+            <div class="widget-header"> <i class="icon-list-alt"></i>
+              <h3>Campanhas recentes</h3>
+            </div>
+            <!-- /widget-header -->
+            <div class="widget-content">
+              <ul class="news-items">
+                <li>                  
+                  <div class="news-item-date"> <span class="news-item-day">30</span> <span class="news-item-month">Novembro</span> </div>
+                  <div class="news-item-detail"> <a href="" class="news-item-title" target="_blank">#25 | e-Parking - O futuro do estacionamento!</a>
+                    <p class="news-item-preview">Marketing personalizado para usuários de redes sociais.</p>
+                  </div>                  
+                </li>
+				
+                <li>                  
+                  <div class="news-item-date"> <span class="news-item-day">29</span> <span class="news-item-month">Novembro</span> </div>
+                  <div class="news-item-detail"> <a href="" class="news-item-title" target="_blank">#24 | Oferta para mensalistas!</a>
+                    <p class="news-item-preview">Campanha destinada à mensalistas.</p>
+                  </div>                  
+                </li>
+
+				<li>                  
+                  <div class="news-item-date"> <span class="news-item-day">28</span> <span class="news-item-month">Novembro</span> </div>
+                  <div class="news-item-detail"> <a href="" class="news-item-title" target="_blank">#23 | Vagas personalizadas? no e-Parking TEM!</a>
+                    <p class="news-item-preview">Campanha destinada à clientes no geral.</p>
+                  </div>                  
+                </li>
+				
+              </ul>
+            </div>
+            <!-- /widget-content --> 
+          </div>
+          <!-- /widget -->
+        </div>
+        <!-- /span6 --> 
+      </div>
+      <!-- /row --> 
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /main-inner --> 
+</div>
+<!-- /main -->
+<div class="extra">
+  <div class="extra-inner">
+    <div class="container">
+      <div class="row">
+                   <div class="span3">
+                        <h4>
+                            Sobre</h4>
+                        <ul>
+                            <li><a href="javascript:;">Informações de desenvolvedores</a></li>
+							<li><a href="javascript:;">Sobre e-Parking</a></li>
+                        </ul>
+                    </div>
+                    <!-- /span3 -->
+                    <div class="span3">
+                        <h4>
+                            Suporte</h4>
+                        <ul>
+                            <li><a href="faq.html">Ajuda</a></li>
+                            <li><a href="javascript:;">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <!-- /span3 -->
+                    <div class="span3">
+                        <h4>
+                            Informações legais</h4>
+                        <ul>                          
+                            <li><a href="javascript:;">Termo de Utilização</a></li>
+                            <li><a href="javascript:;">Política de Privacidade</a></li>
+                        </ul>
+                    </div>
+                    <!-- /span3 -->
+                    <div class="span3">
+                        <h4>
+                            Informações adicionais</h4>
+                        <ul>
+                            <li><a href="">Acesso a Filiais</a></li>
+                            <li><a href="">Ética Corporativa</a></li>
+                        </ul>
+                    </div>
+                    <!-- /span3 -->
+                </div>
+      <!-- /row --> 
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /extra-inner --> 
+</div>
+<!-- /extra -->
+<div class="footer">
+  <div class="footer-inner">
+    <div class="container">
+      <div class="row">
+        <div class="span12"> &copy; 2016 <a href="">e-Parking</a>. </div>
+        <!-- /span12 --> 
+      </div>
+      <!-- /row --> 
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /footer-inner --> 
+</div>
+<!-- /footer --> 
+<!-- Le javascript
+================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="js/jquery-1.7.2.min.js"></script> 
+<script src="js/excanvas.min.js"></script> 
+<script src="js/chart.min.js" type="text/javascript"></script> 
+<script src="js/bootstrap.js"></script>
+<script language="javascript" type="text/javascript" src="js/full-calendar/fullcalendar.min.js"></script>
+ 
+<script src="js/base.js"></script> 
+<script>     
+
+     
+
+        $(document).ready(function() {
+        var date = new Date();
+        var d = date.getDate();
+        var m = date.getMonth();
+        var y = date.getFullYear();
+        var calendar = $('#calendar').fullCalendar({
+          header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay'
+          },
+          selectable: true,
+          selectHelper: true,
+          select: function(start, end, allDay) {
+            var title = prompt('Event Title:');
+            if (title) {
+              calendar.fullCalendar('renderEvent',
+                {
+                  title: title,
+                  start: start,
+                  end: end,
+                  allDay: allDay
+                },
+                true // make the event "stick"
+              );
+            }
+            calendar.fullCalendar('unselect');
+          },
+          editable: true,
+          events: [
+            {
+              title: 'All Day Event',
+              start: new Date(y, m, 1)
+            },
+            {
+              title: 'Long Event',
+              start: new Date(y, m, d+5),
+              end: new Date(y, m, d+7)
+            },
+            {
+              id: 999,
+              title: 'Repeating Event',
+              start: new Date(y, m, d-3, 16, 0),
+              allDay: false
+            },
+            {
+              id: 999,
+              title: 'Repeating Event',
+              start: new Date(y, m, d+4, 16, 0),
+              allDay: false
+            },
+            {
+              title: 'Meeting',
+              start: new Date(y, m, d, 10, 30),
+              allDay: false
+            },
+            {
+              title: 'Lunch',
+              start: new Date(y, m, d, 12, 0),
+              end: new Date(y, m, d, 14, 0),
+              allDay: false
+            },
+            {
+              title: 'Birthday Party',
+              start: new Date(y, m, d+1, 19, 0),
+              end: new Date(y, m, d+1, 22, 30),
+              allDay: false
+            },
+            {
+              title: 'EGrappler.com',
+              start: new Date(y, m, 28),
+              end: new Date(y, m, 29),
+              url: 'http://EGrappler.com/'
+            }
+          ]
+        });
+      });
+    </script><!-- /Calendar -->
+</body>
+</html>
